@@ -1,0 +1,129 @@
+*{ box-sizing: border-box; }
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/background.jpg);
+  background-size: 100% 100%;
+  color: white;
+  font-size: 14px;
+}
+
+.header-navigation{
+  width: 95%;
+  margin: 10px auto;
+  padding: 5px;
+  background: brown;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(200,200,200, .8);
+}
+.header-navigation ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-navigation li{
+  display: inline;
+  font-size: 18px;
+}
+.header-navigation a{
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+.header-navigation a:hover{
+  color: #ddd;
+}
+
+.section{
+  width: 95%;
+  margin: 20px auto;
+}
+/* Section One */
+.section-one{
+  text-align: center;
+}
+.section-one .sidebar, .section-one .main-preview{
+  float: left;
+  padding: 10px;
+}
+.section-one .main-preview{
+  width: 50%;
+}
+.main-preview img{
+  width: 100%;
+  border: solid 2px brown;
+}
+.section-one .sidebar{
+  width: 25%;
+}
+.brand-wrap{
+  height: 240px;
+}
+.brand-wrap img{
+  width: 200px;
+}
+.icon-image{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Section Two */
+.section-two, .section-three, .section-four{
+  border-top: solid thin #eee;
+}
+.section-two h1, .section-three h1, .section-four h1{
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.profile{
+  float: left;
+  width: 32.6%;
+  height: 310px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border: solid thin white;
+  text-align: center;
+  overflow: hidden;
+}
+.profile h2{
+  margin: 5px 0;
+}
+.profile .icon-image{
+  width: 30px;
+  height: 30px;
+}
+.profile__image{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Section Three */
+.section-three{}
+
+/* Section Four */
+.section-four{}
+.finding{
+  float: left;
+  width: 33.3%;
+  height: 300px;
+  padding: 20px;
+}
+.finding img{
+  width: 100%;
+}
+
+
+/* Clearfix Hack For Clearing Floats */
+.clearfix:after, .clearfix:before{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
